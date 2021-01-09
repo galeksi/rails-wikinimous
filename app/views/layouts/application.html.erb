@@ -8,8 +8,11 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <h4><%= link_to 'Wikinimous', articles_path %></h4>
+      <h5><%= link_to 'New Article', new_article_path%></h5>
+    </nav>
     <%= yield %>
   </body>
 </html>
